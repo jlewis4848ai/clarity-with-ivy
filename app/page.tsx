@@ -3,7 +3,7 @@ import ClarityAnimation from "@/components/clarity-animation";
 
 const BOOKING_URL =
   process.env.NEXT_PUBLIC_BOOKING_URL ??
-  "https://calendly.com/results-projectscenarios/30min";
+  "https://calendly.com/ivy-pm/clarity-with-ivy";
 
 export default function HomePage() {
   return (
