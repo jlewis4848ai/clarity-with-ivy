@@ -23,7 +23,6 @@ export default function HomePage() {
             <div className="cw-serif text-xl text-slate-900 tracking-tight">Clarity with Ivy</div>
             <nav className="hidden md:flex items-center gap-7 text-sm text-slate-500">
               <a href="#coaching" className="hover:text-slate-800">Coaching</a>
-              <a href="#learn" className="hover:text-slate-800">Learn</a>
               <a href="#about" className="hover:text-slate-800">About</a>
             </nav>
             <div className="flex items-center gap-3">
@@ -71,11 +70,6 @@ export default function HomePage() {
                   style={{ background: "#0EA5E9" }}
                   className="rounded-full px-7 py-3.5 text-sm font-semibold text-white hover:opacity-90 text-center">
                   Book a discovery call
-                </Link>
-                <Link href="#learn"
-                  style={{ border: "1px solid rgba(255,255,255,.25)" }}
-                  className="rounded-full px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10 text-center">
-                  Explore resources
                 </Link>
               </div>
             </div>
@@ -255,41 +249,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── LEARNING RESOURCES ── */}
-        <section id="learn" style={{ background: "#F8FAFC" }} className="py-24">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="text-center mb-14">
-              <h2 className="cw-serif text-slate-900" style={{ fontSize: "clamp(2rem, 3.5vw, 2.75rem)" }}>
-                Learn at your own pace
-              </h2>
-              <p className="mt-3 text-slate-500 max-w-lg mx-auto">
-                Practical resources designed for middle managers — not MBAs.
-              </p>
-            </div>
-            <div className="grid gap-4 md:grid-cols-3 mb-10">
-              {[
-                { title: "Managing Up with Confidence",                     tag: "Communication", time: "45 min", color: "#EFF6FF", tc: "#2563EB" },
-                { title: "Setting Priorities When Everything Is Urgent",    tag: "Direction",     time: "30 min", color: "#F0FDF4", tc: "#059669" },
-                { title: "Building Your Visibility Without Self-Promotion", tag: "Growth",        time: "60 min", color: "#FDF4FF", tc: "#7C3AED" },
-              ].map((c) => (
-                <div key={c.title}
-                  style={{ border: "1px solid #E2E8F0" }}
-                  className="rounded-2xl bg-white p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
-                  <div className="flex items-center justify-between mb-4">
-                    <span style={{ background: c.color, color: c.tc }}
-                      className="rounded-full px-3 py-1 text-xs font-semibold">
-                      {c.tag}
-                    </span>
-                    <span className="text-xs text-slate-400">{c.time}</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 text-sm leading-snug">{c.title}</h3>
-                  <div className="mt-3 text-xs text-slate-400">Coming soon ›</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* ── 1:1 COACHING CTA ── */}
         <section className="mx-auto max-w-6xl px-6 py-24">
           <div style={{ background: "linear-gradient(135deg, #0D1B2A 0%, #0F2A3D 100%)" }}
@@ -319,7 +278,6 @@ export default function HomePage() {
             <div className="cw-serif text-slate-700 text-lg">Clarity with Ivy</div>
             <div className="flex gap-6">
               <a href="#coaching" className="hover:text-slate-700">Coaching</a>
-              <a href="#learn" className="hover:text-slate-700">Resources</a>
               <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="hover:text-slate-700">Book a Call</Link>
             </div>
             <div>© 2025 Clarity with Ivy</div>
