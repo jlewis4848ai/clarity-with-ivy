@@ -27,7 +27,7 @@ export default function HomePage() {
               <a href="#about" className="hover:text-slate-800">About</a>
             </nav>
             <div className="flex items-center gap-3">
-              <Link href={BOOKING_URL}
+              <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
                 style={{ background: "#0D1B2A" }}
                 className="rounded-full px-4 py-2 text-sm font-medium text-white hover:opacity-90">
                 Book a call
@@ -67,7 +67,7 @@ export default function HomePage() {
                 without burning out or pretending to have all the answers.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-3">
-                <Link href={BOOKING_URL}
+                <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
                   style={{ background: "#0EA5E9" }}
                   className="rounded-full px-7 py-3.5 text-sm font-semibold text-white hover:opacity-90 text-center">
                   Book a discovery call
@@ -304,7 +304,7 @@ export default function HomePage() {
               confidence to lead on your own terms.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href={BOOKING_URL}
+              <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
                 style={{ background: "#0EA5E9" }}
                 className="rounded-full px-8 py-3.5 text-sm font-semibold text-white hover:opacity-90">
                 Book a discovery call
@@ -320,7 +320,7 @@ export default function HomePage() {
             <div className="flex gap-6">
               <a href="#coaching" className="hover:text-slate-700">Coaching</a>
               <a href="#learn" className="hover:text-slate-700">Resources</a>
-              <Link href={BOOKING_URL} className="hover:text-slate-700">Book a Call</Link>
+              <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="hover:text-slate-700">Book a Call</Link>
             </div>
             <div>© 2025 Clarity with Ivy</div>
           </div>
