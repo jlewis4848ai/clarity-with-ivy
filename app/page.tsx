@@ -21,9 +21,6 @@ export default function HomePage() {
           className="sticky top-0 z-50 backdrop-blur-sm">
           <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
             <div className="cw-serif text-xl text-slate-900 tracking-tight">Clarity with Ivy</div>
-            <nav className="hidden md:flex items-center gap-7 text-sm text-slate-500">
-              <a href="#coaching" className="hover:text-slate-800">Coaching</a>
-            </nav>
             <div className="flex items-center gap-3">
               <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
                 style={{ background: "#0D1B2A" }}
