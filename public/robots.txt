@@ -1,0 +1,61 @@
+# ── AI training scrapers — block ──────────────────────────────────────────────
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+# ── Aggressive SEO crawlers — block ───────────────────────────────────────────
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# ── SEO + AI search — allow ───────────────────────────────────────────────────
+# Googlebot (Google Search + AI Overviews)
+# Bingbot (Bing Search + ChatGPT search)
+# PerplexityBot (Perplexity AI — cites sources, drives traffic)
+# YouBot (You.com AI search)
+# facebookexternalhit, Twitterbot, LinkedInBot (social previews)
+
+User-agent: *
+Allow: /
+
+Sitemap: https://claritywithivy.com/sitemap.xml
