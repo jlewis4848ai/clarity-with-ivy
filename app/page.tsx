@@ -23,7 +23,6 @@ export default function HomePage() {
             <div className="cw-serif text-xl text-slate-900 tracking-tight">Clarity with Ivy</div>
             <nav className="hidden md:flex items-center gap-7 text-sm text-slate-500">
               <a href="#coaching" className="hover:text-slate-800">Coaching</a>
-              <a href="#about" className="hover:text-slate-800">About</a>
             </nav>
             <div className="flex items-center gap-3">
               <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
@@ -178,73 +177,6 @@ export default function HomePage() {
                   <p className="text-sm text-slate-400 leading-relaxed">{p.body}</p>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── COACH AIVY ── */}
-        <section className="mx-auto max-w-6xl px-6 py-24">
-          <div style={{ background: "linear-gradient(135deg, #EFF6FF 0%, #F0F9FF 50%, #EDE9FE 100%)", border: "1px solid #BAE6FD" }}
-            className="rounded-3xl p-8 md:p-14 flex flex-col lg:flex-row items-start lg:items-center gap-10">
-            <div className="flex-1">
-              <div className="text-xs font-semibold uppercase tracking-widest text-sky-600 mb-3">
-                AI-Powered Coaching
-              </div>
-              <h2 className="cw-serif text-slate-900 mb-4" style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}>
-                Meet Coach AIvy
-              </h2>
-              <p className="text-slate-600 leading-relaxed mb-7 max-w-lg">
-                Get on-demand clarity for your toughest leadership moments. Whether you're dreading
-                a stakeholder conversation, stuck on a team conflict, or need to structure your
-                thinking before a big meeting — Coach AIvy delivers practical scripts, frameworks,
-                and next steps instantly.
-              </p>
-              <Link href="https://www.introvertedleadershipwithivy.com/chat" target="_blank" rel="noopener noreferrer"
-                style={{ background: "#0EA5E9" }}
-                className="inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold text-white hover:opacity-90">
-                Try Coach AIvy free →
-              </Link>
-            </div>
-
-            {/* Mock chat bubble UI */}
-            <div className="w-full lg:w-72 shrink-0">
-              <div style={{ border: "1px solid #E0F2FE", boxShadow: "0 4px 24px rgba(14,165,233,.12)" }}
-                className="rounded-2xl bg-white p-5 space-y-4">
-                <div className="flex items-start gap-3">
-                  <div style={{ background: "#E0F2FE", color: "#0369A1" }}
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold shrink-0">IV</div>
-                  <div style={{ background: "#F1F5F9" }}
-                    className="rounded-2xl rounded-tl-none px-3.5 py-2.5 text-xs text-slate-700 leading-relaxed">
-                    How can I help you find clarity today?
-                  </div>
-                </div>
-                <div className="flex items-start gap-3 flex-row-reverse">
-                  <div style={{ background: "#EDE9FE", color: "#6D28D9" }}
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold shrink-0">Me</div>
-                  <div style={{ background: "#4F46E5" }}
-                    className="rounded-2xl rounded-tr-none px-3.5 py-2.5 text-xs text-white leading-relaxed">
-                    I have a tough stakeholder review tomorrow...
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div style={{ background: "#E0F2FE", color: "#0369A1" }}
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold shrink-0">IV</div>
-                  <div style={{ background: "#F1F5F9" }}
-                    className="rounded-2xl rounded-tl-none px-3.5 py-2.5 text-xs text-slate-700 leading-relaxed">
-                    Let's prepare together. Here's a 3-step framework to walk in with confidence...
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 pt-1">
-                  <div style={{ background: "#F8FAFC", border: "1px solid #E2E8F0" }}
-                    className="flex-1 rounded-full px-3.5 py-2 text-xs text-slate-400">
-                    Ask Ivy anything...
-                  </div>
-                  <div style={{ background: "#0EA5E9" }}
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold cursor-pointer">
-                    →
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
