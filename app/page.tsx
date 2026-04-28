@@ -199,11 +199,11 @@ export default function HomePage() {
                 thinking before a big meeting — Coach AIvy delivers practical scripts, frameworks,
                 and next steps instantly.
               </p>
-              <span
+              <Link href="https://www.introvertedleadershipwithivy.com/chat" target="_blank" rel="noopener noreferrer"
                 style={{ background: "#0EA5E9" }}
-                className="inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold text-white hover:opacity-90 cursor-pointer">
+                className="inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold text-white hover:opacity-90">
                 Try Coach AIvy free →
-              </span>
+              </Link>
             </div>
 
             {/* Mock chat bubble UI */}
