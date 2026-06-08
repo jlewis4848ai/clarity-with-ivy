@@ -20,12 +20,12 @@ export default function HomePage() {
         <header style={{ borderBottom: "1px solid #E2E8F0", background: "rgba(255,255,255,0.97)" }}
           className="sticky top-0 z-50 backdrop-blur-sm">
           <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
-            <div className="cw-serif text-xl text-slate-900 tracking-tight">Clarity with Ivy</div>
+            <div className="cw-serif text-xl text-slate-900 tracking-tight">Clarity Under Pressure</div>
             <div className="flex items-center gap-3">
               <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
                 style={{ background: "#0D1B2A" }}
                 className="rounded-full px-4 py-2 text-sm font-medium text-white hover:opacity-90">
-                Book a call
+                Book a Clarity Session
               </Link>
             </div>
           </div>
@@ -45,49 +45,37 @@ export default function HomePage() {
             <div className="max-w-3xl">
               <div style={{ border: "1px solid rgba(255,255,255,.15)", background: "rgba(255,255,255,.08)" }}
                 className="mb-6 inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-medium text-sky-300">
-                For middle managers who are ready to lead on purpose
+                For professionals who deliver but don't get the credit
               </div>
 
               <ClarityAnimation className="mb-4 -ml-1" />
 
               <h1 className="cw-serif text-white leading-tight"
                 style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)", lineHeight: 1.2 }}>
-                Cut through the noise. Lead with intention.
+                Results without visibility is just a secret.
               </h1>
+              <p className="mt-4 text-sky-300 font-medium"
+                style={{ fontSize: "1.125rem" }}>
+                Visibility without results is just noise.
+              </p>
               <p className="mt-6 text-slate-300 leading-relaxed max-w-2xl"
                 style={{ fontSize: "1.125rem" }}>
-                You're caught between executive pressure and team reality. You're working hard,
-                but momentum feels elusive. <strong className="text-white font-medium">Clarity with Ivy</strong> gives
-                middle managers the frameworks, AI coaching, and community to lead with direction —
-                without burning out or pretending to have all the answers.
+                You work hard and deliver. But the right people aren't seeing it — and you keep getting
+                passed over by people who are louder, not better.{" "}
+                <strong className="text-white font-medium">Clarity Under Pressure</strong> teaches
+                professionals how to deliver with clarity and be seen with integrity.
+                No fake politics. No self-promotion. Just the real moves that make results count.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-3">
                 <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
                   style={{ background: "#0EA5E9" }}
                   className="rounded-full px-7 py-3.5 text-sm font-semibold text-white hover:opacity-90 text-center">
-                  Book a discovery call
+                  Book a Clarity Session — $400
                 </Link>
               </div>
             </div>
           </div>
         </section>
-
-        {/* ── TRUST BAR ── */}
-        <div style={{ borderBottom: "1px solid #E2E8F0", background: "#F8FAFC" }}>
-          <div className="mx-auto max-w-6xl px-6 py-6 flex flex-wrap items-center justify-center gap-10">
-            {[
-              { value: "7,000+", label: "Managers trained" },
-              { value: "4.6 ★",  label: "Average rating"  },
-              { value: "582",    label: "Reviews"          },
-              { value: "1:1",    label: "Personalized coaching" },
-            ].map((s) => (
-              <div key={s.label} className="text-center">
-                <div className="text-2xl font-bold text-slate-900">{s.value}</div>
-                <div className="text-xs text-slate-500 mt-0.5">{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* ── PAIN POINTS ── */}
         <section className="mx-auto max-w-6xl px-6 py-24">
@@ -96,31 +84,31 @@ export default function HomePage() {
               Sound familiar?
             </h2>
             <p className="mt-3 text-slate-500 max-w-lg mx-auto">
-              Middle management is one of the hardest and most underserved roles in any organization.
+              Smart, hardworking professionals who keep getting overlooked — not because they aren't good enough, but because results alone aren't enough anymore.
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-3">
             {[
               {
-                icon: "↕",
-                color: "#EFF6FF",
-                iconColor: "#2563EB",
-                title: "Pulled in every direction",
-                body: "Leadership says one thing. Your team needs another. You're the one absorbing pressure from both sides — with no clear path forward.",
-              },
-              {
-                icon: "↻",
-                color: "#F0FDF4",
-                iconColor: "#059669",
-                title: "Busy but not moving forward",
-                body: "Your calendar is full but your priorities feel murky. You're working hard and still wondering if you're working on the right things.",
-              },
-              {
                 icon: "◎",
                 color: "#FDF4FF",
                 iconColor: "#7C3AED",
-                title: "Invisible to the people above",
-                body: "You do great work, but it doesn't translate into visibility, recognition, or the opportunity you've been quietly waiting for.",
+                title: "You deliver. Nobody notices.",
+                body: "You put in the work and the results are real. But somehow the credit goes elsewhere or disappears entirely. You're doing everything right except being seen.",
+              },
+              {
+                icon: "⚡",
+                color: "#FFF7ED",
+                iconColor: "#EA580C",
+                title: "You freeze in the moments that matter.",
+                body: "High-stakes presentation. Difficult client. Meeting with leadership. The moments that define careers are the exact moments you can't find the right words.",
+              },
+              {
+                icon: "↑",
+                color: "#EFF6FF",
+                iconColor: "#2563EB",
+                title: "Less capable people keep getting promoted.",
+                body: "They aren't better than you — they're just more visible. And you don't know how to close that gap without becoming someone you're not.",
               },
             ].map((card) => (
               <div key={card.title}
@@ -137,40 +125,58 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── THREE PILLARS ── */}
-        <section id="coaching" style={{ background: "#0D1B2A" }} className="py-24">
+        {/* ── SIX MOVES ── */}
+        <section id="method" style={{ background: "#0D1B2A" }} className="py-24">
           <div className="mx-auto max-w-6xl px-6">
             <div className="text-center mb-14">
               <div className="text-xs font-semibold uppercase tracking-widest text-sky-400 mb-3">
-                What Clarity with Ivy gives you
+                The Methodology
               </div>
               <h2 className="cw-serif text-white" style={{ fontSize: "clamp(2rem, 3.5vw, 2.75rem)" }}>
-                Three pillars of clarity
+                The Clarity Under Pressure Method
               </h2>
+              <p className="mt-4 text-slate-400 max-w-xl mx-auto">
+                Six moves for professionals who want to deliver results — and make sure the right people see them.
+              </p>
             </div>
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {[
                 {
                   n: "01", accent: "#38BDF8",
-                  title: "Clarity of Direction",
-                  body: "Know exactly what to focus on and why. Cut through competing priorities and build a leadership narrative that resonates up, down, and across your org.",
+                  title: "Sense",
+                  body: "Read what everyone is feeling but not saying. Find the real problem beneath the presenting problem.",
                 },
                 {
                   n: "02", accent: "#A78BFA",
-                  title: "Clarity of Communication",
-                  body: "Say the right things to the right people. Frameworks for managing up, leading your team, and navigating the difficult conversations that matter most.",
+                  title: "Orient",
+                  body: "Figure out exactly what this specific situation needs. Not a generic solution — the precise response this moment requires.",
                 },
                 {
                   n: "03", accent: "#34D399",
-                  title: "Clarity of Growth",
-                  body: "Build a career and leadership style that fits who you actually are. No more performing someone else's version of what a leader looks like.",
+                  title: "Structure",
+                  body: "Bring order to chaos without being rigid. Create the container that makes people safe enough to move.",
+                },
+                {
+                  n: "04", accent: "#FB923C",
+                  title: "Trust",
+                  body: "Build it before you push. Nothing moves without it.",
+                },
+                {
+                  n: "05", accent: "#F472B6",
+                  title: "Simplify",
+                  body: "Find the one thing that needs to be said and say it directly. No over-explaining.",
+                },
+                {
+                  n: "06", accent: "#FBBF24",
+                  title: "Amplify",
+                  body: "Make your results visible to the right people with integrity. Not fake politics. Not self-promotion. Strategic visibility.",
                 },
               ].map((p) => (
                 <div key={p.n}
                   style={{ border: "1px solid rgba(255,255,255,.08)", background: "rgba(255,255,255,.04)" }}
                   className="rounded-2xl p-8">
-                  <div className="cw-serif mb-4" style={{ fontSize: "2.5rem", color: p.accent }}>{p.n}</div>
-                  <h3 className="font-semibold mb-3" style={{ color: p.accent }}>{p.title}</h3>
+                  <div className="cw-serif mb-1" style={{ fontSize: "2rem", color: p.accent }}>{p.n}</div>
+                  <h3 className="font-semibold text-lg mb-3" style={{ color: p.accent }}>{p.title}</h3>
                   <p className="text-sm text-slate-400 leading-relaxed">{p.body}</p>
                 </div>
               ))}
@@ -178,38 +184,113 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 1:1 COACHING CTA ── */}
+        {/* ── OFFERS ── */}
         <section className="mx-auto max-w-6xl px-6 py-24">
+          <div className="text-center mb-14">
+            <div className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
+              Work With Ivy
+            </div>
+            <h2 className="cw-serif text-slate-900" style={{ fontSize: "clamp(2rem, 3.5vw, 2.75rem)" }}>
+              Pick your starting point
+            </h2>
+            <p className="mt-3 text-slate-500 max-w-lg mx-auto">
+              Every engagement is built around one thing — your specific situation, right now.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              {
+                name: "The Clarity Session",
+                price: "$400",
+                duration: "90 minutes",
+                description: "You bring one specific situation. You leave knowing exactly what's really happening and exactly what to do about it this week.",
+                cta: "Book a Session",
+                accent: "#0EA5E9",
+                highlight: false,
+              },
+              {
+                name: "The Pressure Sprint",
+                price: "$1,500",
+                duration: "4 sessions over 30 days",
+                description: "One specific challenge solved in 30 days. Real moves. Real result. You deliver something visible and the right people see it.",
+                cta: "Start the Sprint",
+                accent: "#8B5CF6",
+                highlight: true,
+              },
+              {
+                name: "Clarity Under Pressure Cohort",
+                price: "$3,000",
+                duration: "6 weeks · 10–15 people",
+                description: "Learn all six moves with a small group. Live coaching on your actual situations every week. Runs twice per year.",
+                cta: "Join the Waitlist",
+                accent: "#34D399",
+                highlight: false,
+              },
+            ].map((offer) => (
+              <div key={offer.name}
+                style={{
+                  border: offer.highlight ? `2px solid ${offer.accent}` : "1px solid #E2E8F0",
+                  background: offer.highlight ? "#0D1B2A" : "#FFFFFF",
+                }}
+                className="rounded-2xl p-8 flex flex-col shadow-sm">
+                {offer.highlight && (
+                  <div className="text-xs font-semibold uppercase tracking-widest mb-4"
+                    style={{ color: offer.accent }}>
+                    Most Popular
+                  </div>
+                )}
+                <div className="font-semibold mb-1"
+                  style={{ color: offer.highlight ? "#FFFFFF" : "#0F172A" }}>
+                  {offer.name}
+                </div>
+                <div className="cw-serif mb-1" style={{ fontSize: "2rem", color: offer.accent }}>
+                  {offer.price}
+                </div>
+                <div className="text-xs mb-4" style={{ color: offer.highlight ? "#94A3B8" : "#64748B" }}>
+                  {offer.duration}
+                </div>
+                <p className="text-sm leading-relaxed flex-1 mb-8"
+                  style={{ color: offer.highlight ? "#CBD5E1" : "#475569" }}>
+                  {offer.description}
+                </p>
+                <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
+                  style={{ background: offer.accent }}
+                  className="rounded-full px-6 py-3 text-sm font-semibold text-white hover:opacity-90 text-center">
+                  {offer.cta}
+                </Link>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── FINAL CTA ── */}
+        <section className="mx-auto max-w-6xl px-6 pb-24">
           <div style={{ background: "linear-gradient(135deg, #0D1B2A 0%, #0F2A3D 100%)" }}
             className="rounded-3xl p-10 md:p-20 text-center text-white">
-            <div className="text-xs font-semibold uppercase tracking-widest text-sky-400 mb-4">1:1 Coaching</div>
             <h2 className="cw-serif mb-5" style={{ fontSize: "clamp(2rem, 3.5vw, 2.75rem)" }}>
-              Ready for real clarity?
+              Ready to be seen for the work you already do?
             </h2>
             <p className="text-slate-300 max-w-xl mx-auto mb-10 leading-relaxed">
-              One-on-one coaching with Ivy gives you a dedicated thinking partner who understands
-              the specific pressures of middle management. Together, you'll build the clarity and
-              confidence to lead on your own terms.
+              20+ years of navigating pressure, complexity, and high-stakes moments — now in your corner.
+              Start with a single 90-minute session and leave with a clear plan for your specific situation.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
-                style={{ background: "#0EA5E9" }}
-                className="rounded-full px-8 py-3.5 text-sm font-semibold text-white hover:opacity-90">
-                Book a discovery call
-              </Link>
-            </div>
+            <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
+              style={{ background: "#0EA5E9" }}
+              className="inline-block rounded-full px-10 py-4 text-sm font-semibold text-white hover:opacity-90">
+              Book a Clarity Session — $400
+            </Link>
           </div>
         </section>
 
         {/* ── FOOTER ── */}
         <footer style={{ borderTop: "1px solid #E2E8F0" }} className="bg-white py-12">
           <div className="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-            <div className="cw-serif text-slate-700 text-lg">Clarity with Ivy</div>
+            <div className="cw-serif text-slate-700 text-lg">Clarity Under Pressure</div>
             <div className="flex gap-6">
-              <a href="#coaching" className="hover:text-slate-700">Coaching</a>
-              <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="hover:text-slate-700">Book a Call</Link>
+              <a href="#method" className="hover:text-slate-700">The Method</a>
+              <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="hover:text-slate-700">Book a Session</Link>
             </div>
-            <div>© 2025 Clarity with Ivy</div>
+            <div>© 2026 Clarity Under Pressure</div>
           </div>
         </footer>
 

@@ -13,16 +13,16 @@ export default function ClarityAnimation({ className }: { className?: string }) 
     const W = canvas.width;
     const H = canvas.height;
 
-    const bigFont   = `bold 96px 'DM Serif Display', Georgia, serif`;
-    const smallFont = `400 52px 'DM Serif Display', Georgia, serif`;
+    const bigFont   = `bold 78px 'DM Serif Display', Georgia, serif`;
+    const smallFont = `400 42px 'DM Serif Display', Georgia, serif`;
 
     const mc = document.createElement("canvas").getContext("2d")!;
     mc.font = bigFont;
     const w1 = mc.measureText("Clarity").width;
     mc.font = smallFont;
-    const w2 = mc.measureText("with").width;
+    const w2 = mc.measureText("Under").width;
     mc.font = bigFont;
-    const w3 = mc.measureText("Ivy").width;
+    const w3 = mc.measureText("Pressure").width;
 
     const gap = 22;
     const total = w1 + gap + w2 + gap + w3;
@@ -52,9 +52,9 @@ export default function ClarityAnimation({ className }: { className?: string }) 
       return arr.filter((_, i) => i % skip === 0).slice(0, max);
     }
 
-    const raw1 = thin(sampleWord("Clarity", bigFont,   x1, cy),      420);
-    const raw2 = thin(sampleWord("with",    smallFont,  x2, cy + 10), 200);
-    const raw3 = thin(sampleWord("Ivy",     bigFont,    x3, cy),      320);
+    const raw1 = thin(sampleWord("Clarity",  bigFont,   x1, cy),      400);
+    const raw2 = thin(sampleWord("Under",    smallFont, x2, cy + 8),  180);
+    const raw3 = thin(sampleWord("Pressure", bigFont,   x3, cy),      440);
 
     interface Particle {
       x: number; y: number;
@@ -184,8 +184,8 @@ export default function ClarityAnimation({ className }: { className?: string }) 
   return (
     <canvas
       ref={canvasRef}
-      width={820}
-      height={180}
+      width={1100}
+      height={160}
       className={className}
       style={{ maxWidth: "100%", display: "block" }}
     />

@@ -3,8 +3,8 @@ import ScrollToTop from "@/components/scroll-to-top";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Clarity with Ivy",
-  description: "Cut through the noise. Lead with intention. Coaching and frameworks for middle managers.",
+  title: "Clarity Under Pressure",
+  description: "Results without visibility is just a secret. Visibility without results is just noise. Deliver with clarity. Be seen with integrity.",
 };
 
 export default function RootLayout({
