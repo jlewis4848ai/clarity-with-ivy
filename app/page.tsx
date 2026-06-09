@@ -70,7 +70,7 @@ export default function HomePage() {
                 <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
                   style={{ background: "#0EA5E9" }}
                   className="rounded-full px-7 py-3.5 text-sm font-semibold text-white hover:opacity-90 text-center">
-                  Book a Clarity Session — $400
+                  Book a Clarity Session
                 </Link>
               </div>
             </div>
@@ -201,7 +201,6 @@ export default function HomePage() {
             {[
               {
                 name: "The Clarity Session",
-                price: "$400",
                 duration: "90 minutes",
                 description: "You bring one specific situation. You leave knowing exactly what's really happening and exactly what to do about it this week.",
                 cta: "Book a Session",
@@ -210,7 +209,6 @@ export default function HomePage() {
               },
               {
                 name: "The Pressure Sprint",
-                price: "$1,500",
                 duration: "4 sessions over 30 days",
                 description: "One specific challenge solved in 30 days. Real moves. Real result. You deliver something visible and the right people see it.",
                 cta: "Start the Sprint",
@@ -219,7 +217,6 @@ export default function HomePage() {
               },
               {
                 name: "Clarity Under Pressure Cohort",
-                price: "$3,000",
                 duration: "6 weeks · 10–15 people",
                 description: "Learn all six moves with a small group. Live coaching on your actual situations every week. Runs twice per year.",
                 cta: "Join the Waitlist",
@@ -242,9 +239,6 @@ export default function HomePage() {
                 <div className="font-semibold mb-1"
                   style={{ color: offer.highlight ? "#FFFFFF" : "#0F172A" }}>
                   {offer.name}
-                </div>
-                <div className="cw-serif mb-1" style={{ fontSize: "2rem", color: offer.accent }}>
-                  {offer.price}
                 </div>
                 <div className="text-xs mb-4" style={{ color: offer.highlight ? "#94A3B8" : "#64748B" }}>
                   {offer.duration}
@@ -277,7 +271,7 @@ export default function HomePage() {
             <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
               style={{ background: "#0EA5E9" }}
               className="inline-block rounded-full px-10 py-4 text-sm font-semibold text-white hover:opacity-90">
-              Book a Clarity Session — $400
+              Book a Clarity Session
             </Link>
           </div>
         </section>
