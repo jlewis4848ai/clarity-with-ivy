@@ -14,7 +14,7 @@ export default function ClarityAnimation({ className }: { className?: string }) 
     const H = canvas.height;
 
     const bigFont   = `bold 78px 'DM Serif Display', Georgia, serif`;
-    const smallFont = `400 42px 'DM Serif Display', Georgia, serif`;
+    const smallFont = `400 58px 'DM Serif Display', Georgia, serif`;
 
     const mc = document.createElement("canvas").getContext("2d")!;
     mc.font = bigFont;
@@ -53,7 +53,7 @@ export default function ClarityAnimation({ className }: { className?: string }) 
     }
 
     const raw1 = thin(sampleWord("Clarity",  bigFont,   x1, cy),      400);
-    const raw2 = thin(sampleWord("Under",    smallFont, x2, cy + 8),  180);
+    const raw2 = thin(sampleWord("Under",    smallFont, x2, cy + 4),  300);
     const raw3 = thin(sampleWord("Pressure", bigFont,   x3, cy),      440);
 
     interface Particle {
@@ -184,7 +184,7 @@ export default function ClarityAnimation({ className }: { className?: string }) 
   return (
     <canvas
       ref={canvasRef}
-      width={1100}
+      width={1200}
       height={160}
       className={className}
       style={{ maxWidth: "100%", display: "block" }}
