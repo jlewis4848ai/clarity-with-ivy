@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ClarityAnimation from "@/components/clarity-animation";
 
 const BOOKING_URL =
@@ -190,6 +191,55 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── ABOUT ── */}
+        <section id="about" style={{ background: "#F8FAFC", borderTop: "1px solid #E2E8F0", borderBottom: "1px solid #E2E8F0" }} className="py-24">
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="flex flex-col lg:flex-row items-center gap-14">
+
+              {/* Photo */}
+              <div className="shrink-0">
+                <div style={{ background: "#E2E8F0" }}
+                  className="w-64 h-64 rounded-3xl overflow-hidden shadow-lg">
+                  <Image
+                    src="/ivy-profile.png"
+                    alt="Ivy — Clarity Under Pressure"
+                    width={256}
+                    height={256}
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+              </div>
+
+              {/* Bio */}
+              <div className="flex-1 max-w-2xl">
+                <div className="text-xs font-semibold uppercase tracking-widest text-sky-600 mb-3">
+                  About Ivy
+                </div>
+                <h2 className="cw-serif text-slate-900 mb-6" style={{ fontSize: "clamp(1.75rem, 3vw, 2.25rem)" }}>
+                  I've been in the room where everything is falling apart.
+                </h2>
+                <div className="space-y-4 text-slate-600 leading-relaxed">
+                  <p>
+                    I'm a senior consulting professional with 20+ years of experience walking into
+                    high-pressure, high-stakes situations that others avoided. I've rescued failing
+                    projects, rebuilt broken client trust, and aligned difficult stakeholders —
+                    without being the technical expert in the room.
+                  </p>
+                  <p>
+                    I'm an introvert who learned the hard way that delivering results without
+                    visibility is career suicide. I built a system for both sides of that equation.
+                    Now I teach it.
+                  </p>
+                  <p className="font-medium text-slate-800">
+                    Deliver with clarity. Be seen with integrity. No fake politics. No pretending.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
         {/* ── OFFERS ── */}
         <section className="mx-auto max-w-6xl px-6 py-24">
           <div className="text-center mb-14">
@@ -288,6 +338,7 @@ export default function HomePage() {
             <div className="cw-serif text-slate-700 text-lg">Clarity Under Pressure</div>
             <div className="flex gap-6">
               <a href="#method" className="hover:text-slate-700">The Method</a>
+              <a href="#about" className="hover:text-slate-700">About</a>
               <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="hover:text-slate-700">Book a Session</Link>
             </div>
             <div>© 2026 Clarity Under Pressure</div>
