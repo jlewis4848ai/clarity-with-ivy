@@ -202,7 +202,7 @@ export default function HomePage() {
                   className="w-64 h-64 rounded-3xl overflow-hidden shadow-lg">
                   <Image
                     src="/ivy-profile.png"
-                    alt="Ivy — Clarity Under Pressure"
+                    alt="Ivy, Clarity Under Pressure"
                     width={256}
                     height={256}
                     className="w-full h-full object-cover object-top"
@@ -222,8 +222,8 @@ export default function HomePage() {
                   <p>
                     I'm a senior consulting professional with 20+ years of experience walking into
                     high-pressure, high-stakes situations that others avoided. I've rescued failing
-                    projects, rebuilt broken client trust, and aligned difficult stakeholders —
-                    without being the technical expert in the room.
+                    projects, rebuilt broken client trust, and aligned difficult stakeholders.
+                    Not as the technical expert. As the clearest person in the room.
                   </p>
                   <p>
                     I'm an introvert who learned the hard way that delivering results without
