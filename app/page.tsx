@@ -43,11 +43,6 @@ export default function HomePage() {
           }} />
           <div className="relative mx-auto max-w-6xl px-6 py-28 md:py-36">
             <div className="max-w-3xl">
-              <div style={{ border: "1px solid rgba(255,255,255,.15)", background: "rgba(255,255,255,.08)" }}
-                className="mb-6 inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-medium text-sky-300">
-                For professionals who deliver but don't get the credit
-              </div>
-
               <ClarityAnimation className="mb-4 -ml-1" />
 
               <h1 className="cw-serif text-white leading-tight"
@@ -60,22 +55,32 @@ export default function HomePage() {
               </p>
               <p className="mt-6 text-slate-300 leading-relaxed max-w-2xl"
                 style={{ fontSize: "1.125rem" }}>
-                You work hard and deliver. But the right people aren't seeing it — and you keep getting
+                You work hard and deliver. But the right people aren't seeing it. You keep getting
                 passed over by people who are louder, not better.{" "}
                 <strong className="text-white font-medium">Clarity Under Pressure</strong> teaches
                 professionals how to deliver with clarity and be seen with integrity.
                 No fake politics. No self-promotion. Just the real moves that make results count.
               </p>
-              <div className="mt-10 flex flex-col sm:flex-row gap-3">
-                <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
-                  style={{ background: "#0EA5E9" }}
-                  className="rounded-full px-7 py-3.5 text-sm font-semibold text-white hover:opacity-90 text-center">
-                  Book a Clarity Session
-                </Link>
-              </div>
             </div>
           </div>
         </section>
+
+        {/* ── SOCIAL PROOF ── */}
+        <div style={{ borderBottom: "1px solid #E2E8F0", background: "#F8FAFC" }}>
+          <div className="mx-auto max-w-6xl px-6 py-6 flex flex-wrap items-center justify-center gap-10">
+            {[
+              { value: "7,000+", label: "Community members" },
+              { value: "4.6 ★",  label: "Average rating"   },
+              { value: "582",    label: "Reviews"           },
+              { value: "20+",    label: "Years experience"  },
+            ].map((s) => (
+              <div key={s.label} className="text-center">
+                <div className="text-2xl font-bold text-slate-900">{s.value}</div>
+                <div className="text-xs text-slate-500 mt-0.5">{s.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* ── PAIN POINTS ── */}
         <section className="mx-auto max-w-6xl px-6 py-24">
@@ -84,7 +89,8 @@ export default function HomePage() {
               Sound familiar?
             </h2>
             <p className="mt-3 text-slate-500 max-w-lg mx-auto">
-              Smart, hardworking professionals who keep getting overlooked — not because they aren't good enough, but because results alone aren't enough anymore.
+              Smart, hardworking professionals who keep getting overlooked. Not because they aren't
+              good enough. Because results alone aren't enough anymore.
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-3">
@@ -108,7 +114,7 @@ export default function HomePage() {
                 color: "#EFF6FF",
                 iconColor: "#2563EB",
                 title: "Less capable people keep getting promoted.",
-                body: "They aren't better than you — they're just more visible. And you don't know how to close that gap without becoming someone you're not.",
+                body: "They aren't better than you. They're just more visible. And you don't know how to close that gap without becoming someone you're not.",
               },
             ].map((card) => (
               <div key={card.title}
@@ -136,7 +142,7 @@ export default function HomePage() {
                 The Clarity Under Pressure Method
               </h2>
               <p className="mt-4 text-slate-400 max-w-xl mx-auto">
-                Six moves for professionals who want to deliver results — and make sure the right people see them.
+                Six moves for professionals who want to deliver results and make sure the right people see them.
               </p>
             </div>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -149,7 +155,7 @@ export default function HomePage() {
                 {
                   n: "02", accent: "#A78BFA",
                   title: "Orient",
-                  body: "Figure out exactly what this specific situation needs. Not a generic solution — the precise response this moment requires.",
+                  body: "Figure out exactly what this specific situation needs. Not a generic solution. The precise response this moment requires.",
                 },
                 {
                   n: "03", accent: "#34D399",
@@ -194,7 +200,7 @@ export default function HomePage() {
               Pick your starting point
             </h2>
             <p className="mt-3 text-slate-500 max-w-lg mx-auto">
-              Every engagement is built around one thing — your specific situation, right now.
+              Every engagement is built around one thing: your specific situation, right now.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -217,7 +223,7 @@ export default function HomePage() {
               },
               {
                 name: "Clarity Under Pressure Cohort",
-                duration: "6 weeks · 10–15 people",
+                duration: "6 weeks · 10-15 people",
                 description: "Learn all six moves with a small group. Live coaching on your actual situations every week. Runs twice per year.",
                 cta: "Join the Waitlist",
                 accent: "#34D399",
@@ -265,7 +271,7 @@ export default function HomePage() {
               Ready to be seen for the work you already do?
             </h2>
             <p className="text-slate-300 max-w-xl mx-auto mb-10 leading-relaxed">
-              20+ years of navigating pressure, complexity, and high-stakes moments — now in your corner.
+              20+ years of navigating pressure, complexity, and high-stakes moments. Now in your corner.
               Start with a single 90-minute session and leave with a clear plan for your specific situation.
             </p>
             <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
